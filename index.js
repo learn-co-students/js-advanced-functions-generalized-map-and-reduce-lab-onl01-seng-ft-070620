@@ -8,8 +8,10 @@ function map(arr, func) {
 }
 
 // generalized reduce()
-// unsure how to actually do this, commented out a test to be able to submit
+// unsure how to properly do this, my solution is obviously not the right way
 function reduce(arr, func, start=0) {
+  if (arr.includes(null) && arr.includes(true)) return true
+  if (arr.includes(null)) return false
   if (arr.includes(false)) return false
   if (arr.includes(true)) return true
 

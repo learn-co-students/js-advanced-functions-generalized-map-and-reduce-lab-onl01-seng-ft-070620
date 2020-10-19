@@ -55,12 +55,12 @@ describe('my own reduce-like methods', function() {
     })
   })
 
-  // describe("reduce returns true when a true value is present", function() {
-  //   it("reduces correctly", function(){
-  //     sourceArray = [ false, null, null, null, true]
-  //     expect(reduce(sourceArray, function(a, memo){ return a || !!memo })).to.equal(true)
-  //   })
-  // })
+  describe("reduce returns true when a true value is present", function() {
+    it("reduces correctly", function(){
+      sourceArray = [ false, null, null, null, true]
+      expect(reduce(sourceArray, function(a, memo){ return a || !!memo })).to.equal(true)
+    })
+  })
 
   describe("reduce returns false when no true value is present", function() {
     it("reduces correctly", function(){
