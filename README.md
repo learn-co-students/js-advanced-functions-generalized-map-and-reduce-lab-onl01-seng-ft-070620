@@ -187,7 +187,7 @@ The number of "how many arguments are expected" is called _arity_
 
 Keep this in mind as you write your own `reduce`.
 
-## Lab
+## Lab 
 
 In this lab, you should write a generalized `map` and `reduce` function. Both
 of these functions will take an `Array` and a function and require that you pass
